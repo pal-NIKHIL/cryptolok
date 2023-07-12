@@ -4,8 +4,11 @@ This project is a React application that tracks the real-time price of cryptocur
 
 ## Features
 
-#Real-time price tracking of over 100 cryptocurrencies
+\*Real-time price tracking of over 100 cryptocurrencies
 Graph of price history
-#News articles about cryptocurrencies
-#Information about how to learn about cryptocurrency
-#Uses React, Material UI, Redux, and Chart.js for data visualization
+
+\*News articles about cryptocurrencies
+
+\*Information about how to learn about cryptocurrency
+
+\*Uses React, Material UI, Redux, and Chart.js for data visualization
