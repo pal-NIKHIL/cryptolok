@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./scenes/home";
-import NewsPage from "./scenes/news";
+import NewsPage from "./scenes/news1";
 import CryptoLearningPage from "./scenes/cryptolearning";
 import CryptoCurrencyPage from "./scenes/cryptocurrencies";
 import CryptoDetail from "./scenes/cryptodetail";

@@ -108,8 +108,15 @@ const NewsPage = () => {
       <Container maxWidth="xl">
         <Grid container spacing={3}>
           <Grid item xs={12} md={6}>
-            <Card sx={{ height: "50vh" }}>
-              <img src={newsImage} />
+            <Card
+              sx={{
+                height: "50vh",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img src={newsImage} style={{ width: "100%" }} />
             </Card>
           </Grid>
           <Grid item xs={12} md={6}>
