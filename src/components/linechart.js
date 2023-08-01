@@ -8,7 +8,6 @@ const LineChart = ({ coinHistory, coinName, currentPrice }) => {
   for (var i in coinHistory?.data?.history) {
     const item = coinHistory?.data?.history[i];
     const date = new Date(item?.timestamp * 1000);
-    console.log(date.toLocaleDateString("en-US"));
     coinPrice.push(item.price);
     timeStamp.push(date.toLocaleDateString());
   }

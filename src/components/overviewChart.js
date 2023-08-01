@@ -6,7 +6,6 @@ import { Card, CardContent, CardHeader } from "@mui/material";
 import { useGetCryptosQuery } from "../services/cryptoApi";
 const OverviewChart = () => {
   const { data, isFetching } = useGetCryptosQuery(5);
-  console.log(data);
   const totalMarket = data?.data?.stats?.totalMarketCap;
   const coinName = [];
   const coinSymbol = [];
@@ -19,10 +18,8 @@ const OverviewChart = () => {
     remainingMarket += parseInt(item?.marketCap);
     coinMarketCap.push((item?.marketCap / totalMarket) * 100);
   }
-  console.log(remainingMarket);
   coinMarketCap.push(((totalMarket - remainingMarket) / totalMarket) * 100);
   coinName.push("others");
-  console.log(coinMarketCap);
   const dataset = {
     labels: coinName,
     datasets: [

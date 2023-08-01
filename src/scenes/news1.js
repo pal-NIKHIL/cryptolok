@@ -82,7 +82,6 @@ const NewsPage = () => {
       </Box>
     );
   }
-  console.log(data);
 
   const news = data?.value[0];
   const newsurl =

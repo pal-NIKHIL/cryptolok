@@ -29,7 +29,6 @@ const CryptoDetail = () => {
     coinId,
     timeperiod,
   });
-  console.log(data);
   if (isFetching)
     return (
       <Box
