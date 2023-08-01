@@ -92,7 +92,7 @@ const CryptoLearningPage = () => {
               <Card>
                 <CardHeader title="Top Podcasts" />
                 {[...Array(50)].map((_, index) => (
-                  <PodcastCardSkeleton />
+                  <PodcastCardSkeleton key={index} />
                 ))}
               </Card>
             </Grid>
@@ -151,9 +151,9 @@ const CryptoLearningPage = () => {
               </Button>
             </Box>
             <Grid container spacing={3}>
-              {videoData?.contents?.map((data) => (
+              {videoData?.contents?.map((data, index) => (
                 <Grid item xs={12} sm={6} lg={6} key={data.video.videoId}>
-                  <LearnCard data={data} />
+                  <LearnCard data={data} key={index} />
                 </Grid>
               ))}
             </Grid>
@@ -161,9 +161,9 @@ const CryptoLearningPage = () => {
           <Grid item xs={12} lg={4} spacing={2}>
             <Card>
               <CardHeader title="Top Podcasts" />
-              {podcastData?.podcasts?.items?.map((data) => (
+              {podcastData?.podcasts?.items?.map((data, index) => (
                 <Grid item xs={12} key={data.data.uri}>
-                  <PodcastCard props={data} />
+                  <PodcastCard props={data} key={index} />
                 </Grid>
               ))}
             </Card>

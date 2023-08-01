@@ -217,12 +217,13 @@ const CryptoDetail = () => {
                       <RxCrossCircled color="red" />
                     )}
                   </Box>
-                  {genericStats.map(({ title, value, icon }) => (
+                  {genericStats.map(({ title, value, icon, index }) => (
                     <DataCard
                       name={title}
                       number={value}
                       icon={icon}
                       isStats={false}
+                      key={index}
                     />
                   ))}
                 </Box>
@@ -234,12 +235,13 @@ const CryptoDetail = () => {
                     An overview showing the statistics of Bitcoin, such as the
                     base and quote currency, the rank, and trading volume.
                   </Typography>
-                  {stats.map(({ title, value, icon }) => (
+                  {stats.map(({ title, value, icon, index }) => (
                     <DataCard
                       name={title}
                       number={value}
                       icon={icon}
                       isStats={true}
+                      key={index}
                     />
                   ))}
                 </Box>
