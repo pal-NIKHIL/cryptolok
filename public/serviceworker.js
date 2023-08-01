@@ -1,5 +1,9 @@
 const CACHE_NAME = "VERSION-1";
-const urlsToCache = ["./index.html", "./offline.html"];
+const urlsToCache = [
+  "./index.html",
+  "./offline.html",
+  "https://i.pinimg.com/originals/0d/6f/f2/0d6ff2138ad29837f3b3191c1edb4ff9.png",
+];
 const self = this;
 
 self.addEventListener("install", (event) => {
