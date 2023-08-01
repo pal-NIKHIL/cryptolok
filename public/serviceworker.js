@@ -1,5 +1,5 @@
 const CACHE_NAME = "VERSION-1";
-const urlsToCache = ["./index.html", "./offline.html"];
+const urlsToCache = ["./index.html", "./offline.html", "./nointernet.jpg"];
 const self = this;
 
 self.addEventListener("install", (event) => {

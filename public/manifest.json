@@ -3,7 +3,7 @@
   "name": "Cryptolok",
   "icons": [
     {
-      "src": "./logo2.png",
+      "src": "./logo2.gif",
       "sizes": "1024x1024",
       "type": "image/png",
       "purpose":"maskable"
@@ -16,6 +16,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#1c2536",
   "background_color": "#1c2536"
 } 
